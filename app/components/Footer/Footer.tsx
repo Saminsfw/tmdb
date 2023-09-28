@@ -10,7 +10,7 @@ const Footer = ({ logo, menus, extraClasses }: FooterType) => {
     "flex justify-around py-20 px-[260px] h-80 bg-darkBlue w-full"
   );
   return (
-    <footer className={`${footerClasses} ${extraClasses}`}>
+    <footer className={`${footerClasses} ${extraClasses ?? ""}`}>
       <Link href={logo.url} className="inline-block h-24 w-32">
         <Image src={logo.imgSrc} alt={logo.altText} width={130} height={95} />
       </Link>
