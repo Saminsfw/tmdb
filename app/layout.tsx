@@ -79,7 +79,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={poppins.className}>
         <Header logo={headerLogo} menu={headerMenu} ActionIcon={FaSearch} />
-        {children}
+        <section className="m-[65px]">{children}</section>
         <Footer logo={footerLogo} menus={footerMenus} />
       </body>
     </html>
