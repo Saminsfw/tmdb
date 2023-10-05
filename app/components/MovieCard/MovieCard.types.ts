@@ -1,8 +1,6 @@
-export type ImageType = {
-  imgSrc: string;
-  url: string;
-  altText: string;
-};
+import { LogoType } from "../Header/Header.types";
+
+export type ImageType = LogoType;
 export type MovieCardType = {
   movieImage: ImageType;
   title: string;

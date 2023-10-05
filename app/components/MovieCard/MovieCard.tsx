@@ -8,6 +8,14 @@ import Text from "../Text/Text";
 import RatingComponent from "../Rating/Rating";
 import PopupMenu from "../MenuPopup/MenuPopup";
 
+const PopupOptions = {
+  links: [
+    { text: "Option 1", url: "/option1" },
+    { text: "Option 2", url: "/option2" },
+    { text: "Option 3", url: "/option3" },
+    { text: "Option 4", url: "/option4" },
+  ],
+};
 const MovieCard = ({
   movieImage,
   title,
@@ -18,7 +26,10 @@ const MovieCard = ({
   let cardClasses = classNames(`flex flex-col gap-1 relative`);
   return (
     <div className={`${cardClasses} ${extraClasses}`}>
-      <PopupMenu extraTriggerClasses="absolute top-4 right-4" />
+      <PopupMenu
+        links={PopupOptions.links}
+        extraTriggerClasses="absolute top-4 right-4"
+      />
       <Link href={movieImage.url} className="inline-block h-56 w-38 rounded-8">
         <Image
           src={movieImage.imgSrc}
