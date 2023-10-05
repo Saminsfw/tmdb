@@ -12,7 +12,7 @@ const PopupMenu = ({ links, extraTriggerClasses }: MenuPopupType) => (
     </Popover.Trigger>
     <Popover.Portal>
       <Popover.Content
-        className="rounded-8 p-5 bg-gray-50 shadow-l border-2 border-lightBrown"
+        className="rounded-8 p-5 bg-gray-50 shadow-md border-2 border-lightBrown"
         sideOffset={5}
       >
         <div className="flex flex-col gap-2.5 text-xs">
