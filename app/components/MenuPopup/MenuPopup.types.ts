@@ -1,6 +1,6 @@
-import { NavBarLinkType } from "../NavBarLink/NavBarLink.types";
+import { LinkType } from "../NavBarLink/NavBarLink.types";
 
 export type MenuPopupType = {
-  links: Array<NavBarLinkType>;
+  links: Array<LinkType>;
   extraTriggerClasses?: string;
 };

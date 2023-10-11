@@ -1,9 +1,9 @@
 import { FooterMenuType } from "../components/FooterMenu/FooterMenu.types";
 import { LogoType } from "../components/Header/Header.types";
-import { MenuPopupType } from "../components/MenuPopup/MenuPopup.types";
 import { MovieCardType } from "../components/MovieCard/MovieCard.types";
-import { NavBarMenuType } from "../components/NavBarMenu/NavBarMenu.types";
+import { NavBarLinkType } from "../components/NavBarLink/NavBarLink.types";
 import { MoviesSectionType } from "../components/MoviesSection/MoviesSection.types";
+import { NavBarMenuType } from "../components/NavBarMenu/NavBarMenu.types";
 
 export const headerLogo: LogoType = {
   url: "/",
@@ -12,10 +12,82 @@ export const headerLogo: LogoType = {
 };
 export const headerMenu: NavBarMenuType = {
   links: [
-    { text: "Movies", url: "/movies" },
-    { text: "Tv Shows", url: "/tvshows" },
-    { text: "People", url: "/people" },
-    { text: "More", url: "/more" },
+    {
+      text: "Movies",
+      url: "/movies",
+      sublinks: [
+        {
+          text: "Popular",
+          url: "/popular",
+        },
+        {
+          text: "Now Playing",
+          url: "/playing",
+        },
+        {
+          text: "Upcoming",
+          url: "/upcoming",
+        },
+        {
+          text: "Top Rated",
+          url: "/rated",
+        },
+      ],
+    },
+    {
+      text: "Tv Shows",
+      url: "/tv",
+      sublinks: [
+        {
+          text: "Popular",
+          url: "/home",
+        },
+        {
+          text: "Airing Today",
+          url: "/tv",
+        },
+        {
+          text: "On Tv",
+          url: "/people",
+        },
+        {
+          text: "Top Rated",
+          url: "/more",
+        },
+      ],
+    },
+    {
+      text: "People",
+      url: "/people",
+      sublinks: [
+        {
+          text: "Popular People",
+          url: "/popular",
+        },
+      ],
+    },
+    {
+      text: "more",
+      url: "/more",
+      sublinks: [
+        {
+          text: "Discusion",
+          url: "/discussion",
+        },
+        {
+          text: "Leaderboard",
+          url: "/leadernoard",
+        },
+        {
+          text: "API",
+          url: "/Api",
+        },
+        {
+          text: "Support",
+          url: "/Support",
+        },
+      ],
+    },
   ],
 };
 
@@ -336,14 +408,6 @@ export const movies: Array<MovieCardType> = [
     ],
   },
 ];
-export const navBarMenuItems: NavBarMenuType = {
-  links: [
-    { text: "Movies", url: "/movies" },
-    { text: "Tv Shows", url: "/tvshows" },
-    { text: "People", url: "/people" },
-    { text: "More", url: "/more" },
-  ],
-};
 export const movieImage = {
   url: "/",
   imgSrc: "/movie-img.svg",
