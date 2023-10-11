@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import Header from "./Header";
 import { FaSearch } from "react-icons/fa";
-import { headerLogo, headerMenu } from "@/app/mockdata";
+import { headerLogo, headerMenu } from "../../mockdata/index";
 const meta = {
   title: "Components/Header",
   component: Header,

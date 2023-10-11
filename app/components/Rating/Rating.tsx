@@ -1,9 +1,9 @@
 import React from "react";
-import { ratingType } from "./Rating.types";
+import { RatingType } from "./Rating.types";
 import classNames from "classnames";
 import Text from "../Text/Text";
 
-const RatingComponent = ({ value, extraClasses }: ratingType) => {
+const RatingComponent = ({ value, extraClasses }: RatingType) => {
   let percentageClass = classNames("relative text-[8px] text-white top-0");
   let ratingClasses = classNames(
     `flex justify-center items-center w-9 h-9 bg-black rounded-full ring-[3px]`,

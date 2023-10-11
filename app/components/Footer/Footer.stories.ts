@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import Footer from "./Footer";
-import { footerLogo, footerMenus } from "@/app/mockdata";
+import { footerLogo, footerMenus } from "../../mockdata/index";
 const meta = {
   title: "Components/Footer",
   component: Footer,

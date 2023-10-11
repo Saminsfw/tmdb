@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import PopupMenu from "./MenuPopup";
-import { popupMenuLinks } from "@/app/mockdata";
+import { movies } from "../../mockdata/index";
 const meta = {
   title: "Components/PopupMenu",
   component: PopupMenu,
@@ -13,5 +13,5 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 export const PopupMenu_component: Story = {
-  args: popupMenuLinks,
+  args: { links: movies[0].popupMenuLinks },
 };

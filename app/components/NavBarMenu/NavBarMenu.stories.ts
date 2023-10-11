@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import NavBarMenu from "./NavBarMenu";
-import { navBarMenuItems } from "@/app/mockdata";
+import { headerMenu } from "../../mockdata/index";
 const meta = {
   title: "Components/NavBarMenu",
   component: NavBarMenu,
@@ -13,5 +13,5 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 export const Navbar_Menu: Story = {
-  args: navBarMenuItems,
+  args: headerMenu,
 };
