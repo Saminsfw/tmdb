@@ -17,7 +17,7 @@ const MovieCard = ({
   popupMenuLinks,
 }: MovieCardType) => {
   let cardClasses = classNames(
-    `flex flex-col gap-1 relative shrink-0 w-[150px] h-[380px]`
+    `flex flex-col gap-1 relative shrink-0 w-[150px] min-h-[380px]`
   );
   return (
     <div className={`${cardClasses} ${extraClasses}`}>
@@ -25,13 +25,13 @@ const MovieCard = ({
         links={popupMenuLinks}
         extraTriggerClasses="absolute top-3 right-3"
       />
-      <Link href={movieImage.url} className="inline-flex">
+      <Link href={movieImage.url} className="inline-flex h-[225px]">
         <Image
           className="rounded-8"
           src={movieImage.imgSrc}
           alt={movieImage.altText}
           width={150}
-          height={224}
+          height={225}
         />
       </Link>
       <RatingComponent
