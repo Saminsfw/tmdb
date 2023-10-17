@@ -16,7 +16,7 @@ const PopupMenu = ({ links, extraTriggerClasses }: MenuPopupType) => (
         sideOffset={5}
       >
         <div className="flex flex-col gap-2.5 text-xs">
-          {links.map((link, index) => (
+          {links?.map((link, index) => (
             <label key={index}>{link.text}</label>
           ))}
         </div>

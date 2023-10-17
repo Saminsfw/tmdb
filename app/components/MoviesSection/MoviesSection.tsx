@@ -26,7 +26,11 @@ const MoviesSection = ({
               return (
                 <button
                   key={index}
-                  onClick={() => setActiveTab(index)}
+                  onClick={() => {
+                    setActiveTab(index);
+                    //@ts-ignore
+                    tab.onClick();
+                  }}
                   className={tabButtonClasses}
                   data-isactive={activeTab == index}
                 >
@@ -37,9 +41,9 @@ const MoviesSection = ({
           </div>
         )}
       </div>
-      <div className="my-6 relative ">
-        <div className="flex overflow-x-scroll hide-scrollbar">
-          {moviesList.map((movie, index) => {
+      <div className="mt-6 relative ">
+        <div className="flex overflow-x-scroll hide-scrollbar max-w-[1300px] gap-4">
+          {moviesList?.map((movie, index) => {
             return (
               <MovieCard
                 key={index}

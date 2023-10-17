@@ -413,7 +413,9 @@ export const movieImage = {
   imgSrc: "/movie-img.svg",
   altText: "MovieCard Image",
 };
-export let tabs: MoviesSectionType["tabs"] = [
-  { tabName: "Today" },
-  { tabName: "This Week" },
+export const popupMenuLinks = [
+  { text: "Option 1", url: "/option1" },
+  { text: "Option 2", url: "/option2" },
+  { text: "Option 3", url: "/option3" },
+  { text: "Option 4", url: "/option4" },
 ];
